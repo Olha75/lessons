@@ -1,0 +1,95 @@
+@import url("reset.css");
+
+* {
+  color: rgb(112, 83, 201);
+}
+
+h2 {
+  color: rgb(128, 66, 0);
+}
+
+.header-link {
+  color: rgb(234, 67, 159);
+}
+
+#p-s {
+  color: aqua;
+}
+
+[class*="ink"] {
+  color: rgb(222, 17, 20);
+}
+
+a.header-link {
+  color: yellowgreen;
+}
+
+.section.block {
+  color: orangered;
+}
+
+.section,
+.title,
+.sub-title h4 {
+  color: rgb(45, 176, 8);
+}
+
+.address a {
+  color: aqua;
+}
+
+.title .text {
+  color: blueviolet;
+}
+
+.task-1* {
+  color: rgb(56, 230, 21);
+}
+
+.text-item > p {
+  color: aqua;
+}
+
+.text-item ~ p {
+  color: rgb(0, 166, 255);
+}
+
+.task-2 + p {
+  color: rgb(225, 62, 62);
+}
+
+.text {
+  color: green;
+}
+
+li{
+  color:rgb(230, 19, 61) !important;
+}
+
+li{
+  color:blueviolet;
+}
+
+
+.ingredients {
+  color: rgb(17, 182, 17);
+}
+
+.sub-title {
+  color: rgb(70, 185, 247);
+}
+
+.section {
+  color: green;
+}
+.title-section {
+  color: green;
+}
+
+.contacts {
+  color: green;
+}
+
+.footer-link {
+  color: rgb(8, 43, 245);
+}
