@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface:regular);
+@import url("fonts.css");
+@import url("reset.css");
+
+body{
+    /* font-family:"ProximaNova",sans-serif; */
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: 400;
+    color:#2b2929;
+}  
+
+span{
+    text-decoration: line-through;
+    text-decoration-color:red;
+}
+
+a {
+    font-family: "Comforter", cursive;
+    font-size: 30px;
+    color:blueviolet;
+    text-transform: lowercase;
+}
+.article-title{
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-size: 50px;
+    color: rgba(66, 6, 178, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgb(10, 186, 250), -2px -2px 8px rgba(251, 110, 222, 0.9);
+    }
+
+    .article-sub-title{
+    font-style: italic;
+    font-size: 30px;
+    line-height: 1.5625; /* 25/16 */
+    text-align: center;
+    color: palevioletred;
+    text-decoration: underline;
+    text-decoration-style:wavy;
+    text-decoration-color:rgb(9, 247, 49);
+    letter-spacing: 15px;
+    text-transform: capitalize;
+
+}
+
+.article-item{
+    text-align: justify;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    white-space: nowrap;
+}
+
+.article-text{
+    font-style: oblique;
+    text-align: center;
+    line-height: 2.50; /* 40/16 */
+
+}
+.title-disign{
+    font-size: 40px;
+    line-height: 1.20; /* 48/40 */
+    letter-spacing: 0;
+    } 
+
+
+p{
+    line-height: 1.875;
+    letter-spacing: 0;
+}
+
+.title-range{
+    font-size: 20px;
+    line-height: 1.40; /* 28/20 */
+    letter-spacing: 0;
+}
+
+li{
+    line-height: 1.875; /* 30/16 */
+    letter-spacing: 0;
+}
+
+.range-item{
+    line-height: 187.5%; /* 30/16 */
+    letter-spacing: 0;
+    }
+
+.choice-title{
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.20; /* 48/40 */
+    letter-spacing: 0;
+    }
+
+.choice-text{
+    line-height: 1.875; /* 30/16 */
+    letter-spacing: 0;
+   }
+
+#contacts{
+    text-align: right;
+}
