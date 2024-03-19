@@ -44,7 +44,7 @@ body{
     line-height: 1.20; /* 48/40 */
     letter-spacing: 0;
     padding-bottom: 40px;
-       } 
+} 
 
 
 p{
@@ -82,59 +82,57 @@ line-height: 1.875; /* 30/16 */
     padding-bottom: 40px;
     }
 
-    .about-us{
-        /* display:inlaine-block; */
-        /* max-width: 1290px; */
-        margin: 0 auto;
-    }
+.about-us{
+     /* display:inlaine-block; */
+     /* max-width: 1290px; */
+    margin: 0 auto;
+}
 
-    .title-about{
-        text-align: center;
-        font-size: 40px;
-        font-weight: 600;
-        line-height: 1.2;
-    }
+.title-about{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+}
 
-    .list-about{
-        display:inlaine-block;  
-        padding-top: 40px;
-        padding-bottom: 70px;
-        width: 67.18%;
-        margin: 0 auto;
-     
+.list-about{
+    display: inline-block;  
+    padding-top: 40px;
+    padding-bottom: 70px;
+    width: 67.18%;
+    margin: 0 auto;
+}
 
-    }
+.list-about-item{
+    width: 25.2%;
+    display: inline-block;
+    padding-right: 30px;
+    vertical-align: top; 
+}
 
-    .list-about-item{
-        width: 25.2%;
-        display: inline-block;
-        padding-right: 30px;
-        vertical-align: top; 
-        }
+.list-about-item-end{
+    width: 23.20%;
+    display: inline-block;
+    vertical-align: top;   
+}
 
-    .list-about-item-end{
-        width: 23.20%;
-        display: inline-block;
-        vertical-align: top;   
-    }
+.list-about-mark{
+    width: 100%;
+    padding: 0 65px 20px;
+}
 
-    .list-about-mark{
-        width: 100%;
-        padding: 0 65px 20px;
-    }
+.title-list-about{
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height:1.30769;
+    font-weight: 600;
+}
 
-    .title-list-about{
-        font-size: 26px;
-        text-align: center;
-        padding-bottom: 20px;
-        line-height:1.30769;
-        font-weight: 600;
-    }
-
-    .text-about{
-        text-align: center;
-        line-height: 1.875; 
-    }
+.text-about{
+    text-align: center;
+    line-height: 1.875; 
+}
 
 #contacts{
     text-align: right;
@@ -152,7 +150,7 @@ line-height: 1.875; /* 30/16 */
 .title-discounts{
     font-family: "Roboto", sans-serif;
     font-size: 50px;
-    font-family: 500;
+    font-weight: 500;
     text-transform: capitalize;
     text-align: center;
     color: #000;
@@ -166,7 +164,7 @@ line-height: 1.875; /* 30/16 */
     margin: 0 auto;
     margin-left:16.875%;
     font-size: 0;
-  } 
+} 
 
 .item {
 	display: inline-block;
