@@ -92,7 +92,6 @@ letter-spacing: 0;
 }
 
 .list-about{
-    margin-right: 40px;
     width: 67.18%;
     margin: 0 auto;
     font-size: 0;
@@ -108,7 +107,7 @@ letter-spacing: 0;
 .list-about-item-end{
     width: 23.20%;
     display: inline-block;
-    vertical-align: center;   
+    vertical-align: top;   
 }
 
 .list-about-mark{
