@@ -68,6 +68,7 @@ letter-spacing: 0;
 .range-list-item{
     padding-bottom: 20px;
 }
+
 .range-list-item-end{
     padding-bottom: 0;
 }
@@ -159,7 +160,7 @@ letter-spacing: 0;
 .item {
 	display: inline-block;
     width: 16.66%;
-    padding-right: 24px;
+    /* margin-right: 24px; */
     }
 
 #contacts{
