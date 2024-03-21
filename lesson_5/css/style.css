@@ -95,6 +95,7 @@ letter-spacing: 0;
     margin-right: 40px;
     width: 67.18%;
     margin: 0 auto;
+    font-size: 0;
 }
 
 .list-about-item{
@@ -126,9 +127,9 @@ letter-spacing: 0;
 
 .text-about{
     text-align: center;
-    line-height: 1.875; 
+    line-height: 1.875;
+    font-size: 16px; /*указала, бо вище вказано font-size:0;*/
 }
-
 
 .discounts{
     background-color: rgba(30, 40, 50, 0.05);  /* 1E2832  5%*/
