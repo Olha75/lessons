@@ -4,17 +4,18 @@
 
 body{
     font-family:"ProximaNova",sans-serif;
-       color:#2b2929;
-       background-color: #f8f8f8;
-       padding: 0 20px;
-   }  
+    color:#2b2929;
+    background-color: #f8f8f8;
+    padding: 0 20px;
+}  
 
 
-    .header{
-        font-size: 20px;
-        margin-bottom: 10px;
-        background-color: rgb(238, 251, 251);
+.header{
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(238, 251, 251);
     }
+
 .design{
     max-width: 1070px;
     margin: 0 auto;
@@ -34,16 +35,20 @@ body{
 } 
 
 
-.text-design{
+.text-design, .text-design-end{
     line-height: 1.875;
     letter-spacing: 0;
     margin-bottom: 10px;
 }
 
+.text-design-end{
+    margin-bottom: 0;
+}
+
 .range{
     max-width: 1070px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .title-range{
@@ -58,7 +63,7 @@ body{
 margin-bottom: 40px;
 padding-left: 47px;
 line-height: 1.875; /* 30/16 */
-    letter-spacing: 0;
+letter-spacing: 0;
 }
 .range-list-item{
     padding-bottom: 20px;
@@ -69,15 +74,13 @@ line-height: 1.875; /* 30/16 */
 
 .range-item{
     line-height: 187.5%; /* 30/16 */
-    letter-spacing: 0;
-    padding-bottom: 40px;
+    letter-spacing: 0; 
     }
 
 .about-us{
-     /* display:inlaine-block; */
-     /* max-width: 1290px; */
     margin: 0 auto;
     margin-bottom:70px;
+    padding-top: 70px;
 }
 
 .title-about{
@@ -108,9 +111,9 @@ line-height: 1.875; /* 30/16 */
 }
 
 .list-about-mark{
-  display: block;
-  max-width: 170px;
-  margin: 0 auto 20px;
+    display: block;
+    max-width: 170px;
+    margin: 0 auto 20px;
 }
 
 .title-list-about{
@@ -158,10 +161,6 @@ line-height: 1.875; /* 30/16 */
     width: 16.66%;
     padding-right: 24px;
     }
-
-/* .content {
-   display: block;
-}  */
 
 #contacts{
     padding: 0 20px 20px 0;
