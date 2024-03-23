@@ -12,7 +12,6 @@ body{
 
 .header{
     font-size: 20px;
-    margin-bottom: 10px;
     background-color: rgb(238, 251, 251);
     }
 
@@ -20,6 +19,7 @@ body{
     max-width: 1070px;
     margin: 0 auto;
     margin-bottom: 40px;
+    padding-top: 40px;
 }
 
 .main-photo{
@@ -135,7 +135,8 @@ letter-spacing: 0;
     background-color: rgba(30, 40, 50, 0.05);  /* 1E2832  5%*/
     max-width: 100%;
     padding: 100px 0 335px;
-    margin: 0 auto;
+    text-align: center;
+    /* margin: 0 auto; */
     /* overflow: hidden; */
 }
 
@@ -144,27 +145,34 @@ letter-spacing: 0;
     font-size: 50px;
     font-weight: 500;
     text-transform: capitalize;
-    text-align: center;
     color: #000;
     margin-bottom: 60px;
 }
 
 .items {
-    display:block;
-    width: 68.7499%; 
-    max-width: 1320px;
+    /* width: 68.7499%;  */
+    /* max-width: 1320px; */
     margin: 0 auto;
     font-size: 0;
 } 
 
-.item {
+.item,.item-end {
 	display: inline-block;
-    width: 16.66%;
-    /* margin-right: 24px; */
+    /* width: 16.66%; */
+    font-size: 0;
+    margin-right: 24px;
     }
 
+    .item-end{
+        margin-right: 0;
+    }
+
+.content{
+    max-width: 100%;
+}
+
 #contacts{
-    padding: 0 20px 20px 0;
+    padding:10px 20px 20px 0;
     text-align: right;
     font-size: 20px;
     background-color: antiquewhite;
