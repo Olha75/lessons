@@ -1,0 +1,297 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: "ProximaNova", sans-serif;
+    color: #2b2929;
+    background-color: #f8f8f8;
+    padding: 0 40px;
+}
+
+.header {
+    font-size: 20px;
+    background-color: rgb(238, 251, 251);
+}
+
+/*------------Матеріали уроку--------------*/
+
+
+/* В мене повно англійськог тексту (Lorem) але і багато українського, валідатор порекомендував позначити мову як zxx */
+
+.lesson-6 {
+    background: url("../img/background_2.png") center / 400px no-repeat,
+    url("../img/my_fon.gif") 100% repeat fixed;
+  /* background-attachment: fixed; */
+  /* background-size: auto auto; */
+}
+
+.step-1 {
+    color: #f8f8f8;
+    background-color: aqua;
+    opacity: 0.7;
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.step-2 {
+    text-align: right;
+}
+.step-2 span {
+    color: yellow;
+    outline: 5px dotted pink;
+    background-color: gray;
+    outline-offset: 10px;
+}
+
+.step-3 {
+    width: 300px;
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+    color: rgb(240, 200, 242);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(25, 242, 229, 1) 8%,
+    rgba(66, 19, 235, 1) 21%,
+    rgba(96, 60, 224, 1) 44%,
+    rgba(223, 233, 178, 1) 68%,
+    rgba(0, 212, 255, 1) 100%);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.step-4 {
+    color: rgb(92, 173, 6);
+    background-color: aqua;
+    max-width: 500px;
+    box-shadow: 4px 2px 2px blue, -7px -4px 5px red;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 70%;
+    border-inline: 20px double rgb(197, 251, 48);
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.step-5 {
+    visibility: hidden;
+    color: red;
+}
+
+.step-6 {
+    color: red;
+    font-size: 50px;
+    text-shadow: 2px 3px 6px aqua;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+}
+
+.arrow-top {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(238, 3, 19);
+    margin: 0 auto;
+}
+
+/* ----------------Д/з Перший скрін---------------- */
+
+.design {
+    max-width: 1070px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+.main-photo {
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.title-disign {
+    font-size: 40px;
+    line-height: 1.2; /* 48/40 */
+    letter-spacing: 0;
+        margin-bottom: 40px;
+}
+
+.text-design,
+.text-design-end {
+    line-height: 1.875;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+}
+
+.text-design-end {
+    margin-bottom: 0;
+}
+
+.range {
+    max-width: 1070px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.title-range {
+    font-size: 20px;
+    line-height: 1.4; /* 28/20 */
+    letter-spacing: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.range-list {
+    margin-bottom: 40px;
+    padding-left: 2.66px;
+    line-height: 1.875; /* 30/16 */
+    letter-spacing: 0;
+}
+
+.range-list-item,
+.range-list-item-end {
+    margin-bottom: 20px;
+    background-image: url("../img/mini-mark.png");
+    background-repeat: no-repeat;
+    padding-left: 47px;
+    min-width: 35px;
+}
+
+.range-list-item-end {
+    margin-bottom: 0;
+}
+
+.range-item {
+    line-height: 187.5%; /* 30/16 */
+    letter-spacing: 0;
+}
+
+/* ----------------Д/з Другий скрін---------------- */
+
+.eduplay {
+    max-width: 1440px;
+    background: url("../img/background_alphabet_screen_2.png") center / 870px auto
+    no-repeat,
+    url("../img/background_screen_2.png") center/1440px no-repeat,
+    rgba(128, 128, 128, 0.2);
+    padding: 173px 0 147px 80px;
+    margin: 0 auto;
+}
+
+.title-eduplay,
+.text-eduplay {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.text-eduplay {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* .button {
+    padding: 11px 20px;
+    background: #ffffff;
+    -radius: 8px;
+    max-width: 217px;
+} */
+
+.button-eduplay{
+    font: 700 16px / 1.5625 "Quicksand", sans-serif;
+    color: #0d1216;
+    padding: 11px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+/* ----------------Д/з Третій скрін---------------- */
+
+.ec {
+    padding-top: 225px;
+    padding-bottom: 60px;
+    background: url("../img/frame_2_bc_screen_3.png") no-repeat right 365.8px / 218px,
+    url("../img/frame_1_bc_screen_3.png") no-repeat 0 614.62px / 132.34px,
+    rgba(30, 40, 50, 0.05);
+}
+
+.content-ec {
+    max-width: 1226px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.text-content-ec {
+    display: inline-block;
+    margin-right: 98px;
+    padding-top: 74px;
+    padding-bottom: 124px;
+}
+
+.title-ec,
+.text-ec {
+    font-size: 74px;
+    line-height: 0.74324;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 52px;
+}
+
+.text-ec {
+    font-weight: 400; /*тут показую цей розмір, бо вище він був перезаписаний, так менше коду ніж прописуватти окремо */
+    font-size: 30px;
+    line-height: 1.83333;
+    width: 682px;
+    margin-bottom: 66px;
+}
+
+.button-ec {
+    background: #1e2832;
+    padding: 21px 26px;
+    font-size: 29px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+}
+
+.link-ec {
+    margin-right: 8px;
+}
+
+.wrapper-image {
+    display: inline-block;
+    max-width: 424px;
+    width: 100%;
+    height: 542px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 160px 0;
+    vertical-align: top;
+}
+
+.wrapper-image img {
+    max-width: 424px;
+    width: 100%;
+    height: 542px;
+    border-radius: 160px 0;
+    display: inline-block;
+    margin: -20px 18px 20px -18px;
+}
+
+/* -------------------FOOTER---------------------- */
+
+#contacts {
+    padding: 10px 20px 20px 0;
+    text-align: right;
+    font-size: 20px;
+    background-color: antiquewhite;
+}
