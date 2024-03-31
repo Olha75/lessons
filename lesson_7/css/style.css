@@ -1,0 +1,490 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: "ProximaNova", sans-serif;
+    color: #2b2929;
+    background-color: #f8f8f8;
+    padding: 0 40px;
+}
+
+.header {
+    font-size: 20px;
+    background-color: rgb(238, 251, 251);
+    padding: 10px;
+    
+}
+
+.header-list a:hover{
+    margin-left: 8px;
+}
+
+.header-list a:active{
+    color: #2400ff;
+}
+/*------------Матеріали уроку--------------*/
+
+
+
+
+.lesson-7 {
+    background-image:  url("../img/background_holographic_screen_2.png"), url("../img/bacground_dz_7.jpg");
+    padding: 40px;
+}
+
+.left-side, .right-side  {
+    display: inline-block;
+}
+
+.button-yes, .button-no{
+    padding: 15px;
+    background-color: rgb(161, 167, 165);
+    box-shadow: 0px 5px 2px #1e2832;
+    border-radius: 8px;
+    margin-right: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.button-yes:hover{
+    background-color:aquamarine;
+    color:blue;
+}
+
+.button-yes:active{
+    padding: 10px;
+    background-color: aqua;
+    /* font-weight: 600;
+    font-size: 20px; */
+    margin-top: 3px;
+    box-shadow: -2px -2px 2px #59626d, 2px 7px 7px #bfeb11;
+}
+
+.button-no:hover{
+    background-color:rgb(245, 203, 225);
+    color:#9c0a0a;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.button-no:active{
+    background-color: rgb(33, 1, 6);
+    color:#ffffff;
+    font-size: 30px;
+    margin-top: 3px;
+    padding-bottom: 10px;
+    box-shadow: 5px 20px 15px #9c0a0a;
+}
+
+.present{
+    display: block;
+    max-width:185px;
+    visibility: hidden ;
+}
+.button-yes:active .present{
+    visibility: visible;
+}
+
+.blood{
+    display: block;
+    visibility: hidden;   
+}
+.button-no:active .blood{
+    visibility: visible;
+}
+
+.link{
+    margin: 20px 0;
+    background-color: rgb(205, 195, 225);
+    padding: 20px;
+    font-style:italic;
+    border-radius: 25px;
+    border: 5px dotted #3c0b38;
+    box-shadow: 2px 2px 10px #3c0b38;
+}
+
+.title-list{
+    color:rgb(188, 228, 27);
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #59626d;
+    font-style:italic;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.language-country::before {
+    content: "";
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+    background: url("../img/earth_dz.png") 0 0 / 100% no-repeat;
+    margin-right: 10px;
+}
+
+.language-country:hover::before{
+    transform: rotate(180deg);
+}
+
+.language-link li:hover{
+    color: #bfeb11;
+    font-size: 25px;
+}
+.language-country:nth-child(8)::before{
+    background: url("../img/rashka_dz_7.png")0 0 / 20px no-repeat;
+    transform: none;
+}
+
+.language-link li:nth-child(8n):hover{
+    font-size: 14px;
+    color: #59626d;
+    text-shadow:2px 2px 2px #d27307;
+}
+
+.title-list::after {
+    content: "";
+	margin-top: 5px;
+	max-width: 30%;
+	height: 2px;
+	display: block;
+	background: linear-gradient(90deg, rgb(191, 255, 0) 0%, rgba(36, 0, 255, 1) 100%);
+}
+
+.language-link{
+    color:#3c0b38;
+}
+
+.language-country:first-child{
+    text-transform:capitalize;
+}
+
+    .language-country:not(:last-child){
+        margin-bottom: 15px;
+    }
+
+    .language-country:nth-child(odd){
+        background-color: rgb(201, 200, 203);
+    }
+
+    .language-link li:last-of-type {
+        text-transform: uppercase;
+    }
+
+
+/* ось тут? валідатор ругається на частину коду з has, але я не розумію чому. Бо синтаксис наче вірниЙ */
+
+    .language-country:has(a){
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 2px;
+}
+
+.language-link li:active {
+    color: #5013ba;
+}
+
+.language-country li:visited  {
+    color:#282624;
+}                                                                   
+
+a:focus {
+	outline: 2px dashed rgb(190, 89, 237);
+}
+
+a:focus-visible {
+    outline: 3px dotted rgb(5, 236, 86);
+}
+
+
+/*-----------------------Гра-----------------------*/
+
+.play {
+    padding: 50px 0;
+}
+
+.title-play {
+    font-size: 45px;
+    text-align: center;
+    color: #2b6516;
+    text-shadow: 2px 2px 3px #0b4314;
+    margin-bottom: 10px;
+}
+
+.no-friend{
+    color: rgb(255, 188, 87);
+    font-style: italic;
+}
+
+.subtitle-play {
+    font-style: italic;
+    font-size: 14px;
+    color:#5013ba;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fon {
+    background: url("../img/play_dz_7.jpg") no-repeat;
+    width: 1010px;
+    height: 1010px;
+    margin: 0 auto;
+    background-size: 100%;
+}
+
+.line-1,
+.line-3,
+.line-4,
+.line-5,
+.line-6 {
+    vertical-align: bottom;
+    font-size: 0;
+    display: inline-block;
+}
+
+.line-1 img:not(.start),
+.line-3 img,
+.line-4 img,
+.line-5 img,
+.line-6 img {
+    vertical-align: bottom;
+    opacity: 0;
+}
+
+.line-2 img,
+.line-7 img {
+    display: block;
+    float: right;
+    opacity: 0;
+}
+
+.start,
+.start:hover + .line1-ork1 {
+    opacity: 1;
+}
+
+[class^="line"] img:hover {
+    opacity: 1;
+}
+
+/* .line-1 img:hover,
+.line-2 img:hover,
+.line-3 img:hover,
+.line-4 img:hover,
+.line-5 img:hover,
+.line-6 img:hover,
+.line-7 img:hover,
+.finish,
+.finish:hover {
+    opacity: 1;
+} */
+
+.finish,
+.finish:hover {
+    opacity: 1;
+}
+
+
+/* ----------------Д/з Перший скрін---------------- */
+
+.about_me {
+    background-color:#313131;
+    padding: 120px 0;
+}
+
+.about-info {
+    max-width: 992px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.title-about-info {
+font: 700 60px / 1.16667 "Exo", sans-serif;
+text-transform: uppercase;
+color: #fff;
+text-align: center;
+max-width: 900px;
+margin-bottom: 20px;
+}
+
+.title-about-info::after{
+    margin:20px auto 0;
+	width: 50%;
+    max-width: 900px;
+	height: 1px;
+	display: block;
+	content: "";
+	background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
+}
+
+.text-about-info {
+font: 18px / 2.22222 "Exo", sans-serif;
+letter-spacing: -0.02em;
+text-transform: capitalize;
+text-align: center;
+color: #fff;
+}
+.about-link {
+    margin: 0 auto;
+    /* max-width: 1090px; */
+    max-width: 1150px; 
+} 
+
+.list-link {
+    font-size: 0;
+    margin: 0 auto;
+    text-align: center;     
+}
+.item-list-link {
+    display: inline-block;
+    font: 500 20px / 1.25 "Orbitron", sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    margin-right: 60px;
+    
+}
+
+.item-list-link::after{
+    /* display: block; */
+    background: linear-gradient(90deg, #f00 0%, #42ff00 48.9%, #2400ff 100%);
+    content:"";
+    margin-left: 60px;
+    width: 10px;
+    height: 11px;
+    border-radius: 50%;
+}
+.list-link li:last-child{
+    margin-right: 0;
+}
+/* ----------------Д/з Другий скрін---------------- */
+.contact-portfolio {
+    background-color:#313131;
+    padding-bottom: 111px;
+}
+.contact-list {
+    font-size: 0;
+    max-width: 959px;
+    margin: 0 auto;
+}
+
+.item-contact-list {
+    display: inline-block;
+    font: 20px / 1 "Exo", sans-serif;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.item-contact-list:not(:last-child){
+    margin-right: 80px;
+}
+
+.item-contact-list img{
+    margin-right: 20px;
+}
+
+
+.item-contact-list:hover{
+    text-shadow:2px  3px 3px #69d8f7;
+}
+
+
+/* ----------------Д/з Третій скрін---------------- */
+
+.design {
+    max-width: 1070px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+.main-photo {
+    max-width: 100%;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.title-disign {
+    font-size: 40px;
+    line-height: 1.2; /* 48/40 */
+    letter-spacing: 0;
+        margin-bottom: 40px;
+}
+
+.text-design {
+    line-height: 1.875;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+}
+
+.text-design:last-child {
+    margin-bottom: 0;
+}
+
+/*-------------------------------------*/
+.range >*{
+    margin-bottom: 20px;
+}
+
+.range {
+    max-width: 1070px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.title-range {
+    font-size: 20px;
+    line-height: 1.4; /* 28/20 */
+    letter-spacing: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.range-list {
+    margin-bottom: 40px;
+    padding-left: 2.66px;
+    line-height: 1.875; /* 30/16 */
+    letter-spacing: 0;
+}
+
+.range-list-item{
+    background-image: url("../img/mini-mark.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-left: 47px;
+    min-height: 28px;
+}
+
+.range-list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.range-item {
+    line-height: 187.5%; /* 30/16 */
+    letter-spacing: 0;
+    min-height: 28px;
+}
+
+.range > *:last-child{
+    margin-bottom: 0;
+}
+
+/* -------------------FOOTER---------------------- */
+
+#contacts {
+    padding: 10px;
+    text-align: right;
+    font-size: 20px;
+    background-color: antiquewhite;
+}
+
+#contacts a:hover{
+    border-bottom: 4px dotted #42ff00;
+    color:rgb(255, 188, 87);
+}
+
+
+#contacts a:active{
+    border-bottom: 4px dotted #42ff00;
+    color:rgb(0, 181, 255);
+}
