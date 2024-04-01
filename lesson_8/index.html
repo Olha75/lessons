@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <title>Lesson 8</title>
+    </head>
+    <body>
+        <header class="header">
+            <div>
+                <a href="#"><img src="img/logo.jpg" alt="одне й те саме зображення ггірського пейзажу на помаранчевому фоні,  поділено навпіл, половина показано у векторі інша половина у растрі." class="logo"></a>
+                <ul class="header-list">
+                    <li><a href="#lesson">Матеріали уроку</a></li>
+                    <li><a href="#icons">Іконки</a></li>
+                    <li><a href="#content">Контентні зображення</a></li>
+                    <li><a href="#decor">Декоративні зображення</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="lesson-8">
+                <div class="lesson" id="lesson">
+                    <h1 class="title-lesson">Матеріали уроку</h1>
+                    <p >Граіфчне зображення візерунка використане, як декор. Підключене через css/background.</p>
+                    <img src="img/flowers_optim.webp" alt="Квіткова композиція в яскравих кольорах">
+                    <p class="text-img">Зображення квіткової композиції червоного кольору використане, як контенте зображення. Початково зображення було у форматі png, далі оптимізовано і переведено у формат webp.</p>
+                    <ul>
+                        <li>Це просто іконка, вона додана як bacground-image до li.</li>
+                        <li>Це просто іконка, вона додана як bacground-image до li.</li>
+                        <li>Це просто іконка, вона додана як bacground-image до li.</li>
+                        <li>Це просто іконка, вона додана як bacground-image до li.</li>
+                        <li>Це просто іконка, вона додана як bacground до li.</li>
+                    </ul>
+                </div>
+                <div class="icons" id="icons">
+                    <h2 class="title-icons">Іконки</h2>
+                    <p class="text-icons">Дані іконки це векторна графіка (svg). Їх символічне зображення і розташування, навіть при додаванні контенту, наврядче буде змінюватись. Тож такі іконки можно підключити через css, властивість  background або додати їх через псевдоелементи.
+                    </p>
+                    <img src="img/icons/arrow_down.svg"  alt="галочка (стрілочка) вниз, що означає, що є список, який можно розгорнути">
+                    <img src="img/icons/arrow_up.svg"  alt="галочка (стрілочка) вверх, що означає, що цей список, де зараз знаходиться користувач, можно згорнути">
+                    <img src="img/icons/question.svg"  alt="знак питання в колі">
+                </div>    
+                <div class="content" id="content">
+                    <h2 class="title-content"
+                    >Контентні зображення</h2>
+                    <div>
+                        <h3 class="sub-title">Контентне растрове зображення</h3>
+                        <p class="text-contrastr">В даному макеті це зображення використовується у секції "Hero" - тобто це майже головне зображення/банер на сторінці. Воно контентне, растрове з прозорістю (png). Зображення було оптимізоване і переведене у формат webp. Так як це банер, то скоріш за все, рано чи пізно його замінять, тож краще його використовувати через html.</p>
+                        <p class="text-contrastr">У коді представлені різні варіанти підключення: ліворуч через  img, праворуч через picture.</p>
+                        <img  srcset="img/rastr_content/hero_2x.webp 2x, img/rastr_content/hero_3x.webp 3x"  src="img/rastr_content/hero_1x_opt.webp" alt="Лодоня, що тримає гаманець з якого стирчать банківськи картки, навколо лодоні монети і купюри. Кольори яскраві, переважно жовто-гарячи"  class="hero"> 
+                        <picture>
+                            <source srcset="img/rastr_content/hero_1x_opt.webp, img/rastr_content/hero_2x_opt.webp 2x, img/rastr_content/hero_3x_opt.webp 3x" type="image/webp" class="hero">
+                            <img src="img/rastr_content/hero_1x_opt.png" alt="Лодоня, що тримає гаманець з якого стирчать банківськи картки, навколо лодоні монети і купюри. Кольори яскраві, переважно жовто-гарячи" class="hero">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3 class="sub-title">Контентне векторне зображення</h3>
+                        <p class="text-contvector">Дані зображення у векторній графіці (svg). Скоріш за все контент, який підкреслюють ці контентні іконки буде змінюватись, доповнюватись, оновлюватись. Наприклад: коли розширяться кордони доставки, то іконка з картою тільки України буде не актуальною. Тож будуть внесени зміни і в контенті і в зображенні. Тому краще їх одразу підключати через html.</p>
+                        <img src="img/icons_content_vector/service.svg"  alt="Навушники та знак питання, символізує післягарантійне обслуговування.">
+                        <img src="img/icons_content_vector/assembly.svg"  alt="Розкрита коробка з стрілкою вгору, символізує що товар дістануть та зберуть.">
+                        <img src="img/icons_content_vector/delivery.svg"  alt="Грузва газелька - символізує безкоштовну доставку.">
+                        <img src="img/icons_content_vector/discounts.svg"  alt="Бірки зш знаком %, симолізує знижки для клієнтів.">
+                        <img src="img/icons_content_vector/map.svg"  alt="Карта України, символізує оплату і доставку по Україні.">
+                        <img src="img/icons_content_vector/pay_bank.svg"  alt="Банківськи картки, символізує можливість оплати на карту.">
+                        <img src="img/icons_content_vector/pay_chek.svg"  alt="Чек і монета, символізує можливість безготівкового розрахунку або з каси банку,або з розрахункового рахунку.">
+                        <img src="img/icons_content_vector/pay_money.svg"   alt="Купюри, символізує можливість післяплати готівкою.">
+                        <img src="img/icons_content_vector/pay_terminal.svg"  alt="Термінал, символізує можливість оплати через термінал.">
+                        <img src="img/icons_content_vector/prepayment.svg"  alt="Галочка - в даному контексті символізує можливість передплати.">
+                        <img src="img/icons_content_vector/credit.svg"  alt="Коло з відокремленим шматочком - символізує можливість кредиту, розстрочки.">
+                    </div>
+                </div>
+                <div class="decor" id="decor"><h2 class="title-decor">Декоративні зображення</h2>
+                <p class="text-decor">В даному скрині макету немає декоративного зображення. Воно могло би бути, як векторним так і растровим. Так як це зображення, що не впливає на контент, а контент чи зміни контенту не впливає на зображення (маються на увазі зміни не кординальні звичайно, типу вчора продавали рибу, а завтра взуття), то таке декоративне зображення було би підключено через css, властивість  background. Як би воно було...  <span>може воно і є, але мій монітор його не бачить.</span></p>
+            </div>
+            </div>
+        </main>
+        <footer  class="footer" id="contacts">
+            <div>
+                <a href="index.html"><p>Весна 2024 - домашнє завдання Урок  8 </p></a>
+        </div>
+        </footer>
+    </body>
+</html>
