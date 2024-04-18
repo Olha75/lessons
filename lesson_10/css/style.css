@@ -43,7 +43,7 @@ body {
     color: #fff;
     vertical-align: middle;
     line-height: 1.26316;
-    font-size: 19px;
+    font-size:19px;
 }
 
 .header__link::before{
@@ -205,18 +205,6 @@ body {
 
 .sub-menu__item:hover{
     color: #ffbc57;
-}
-
-.main__wrapper {
-    position: relative;
-}
-
-.main__wrapper:hover .menu {
-    display: block;
-}
-
-.main__wrapper:hover .sub-menu {
-    display: none;
 }
 
 
