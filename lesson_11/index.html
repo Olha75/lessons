@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Lesson 11</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <a href="#2d">2D трансформації</a>
+                <a href="#3d">3D трансформації</a>
+                <a href="#car">Авто мрії</a>
+            
+            </header>
+            <main class="main">
+                <div id="d2">
+                    <h2 class="transform__title">transform: <span>translate</span>, <span>scala</span>, rotate, skew, matrix, origin</h2>
+                    <ul class="transform">
+                        <li class="transform__item"><div class="transform__box">translateX (-75px)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--trans-y">translateY (35px)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--trans-percent">translate (5%, 40%)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--scale-xy">scale (0.6, 0.8)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--scale-n">scale (2)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--rotate-deg">rotate (-90deg)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--rotate-y">rotateY (230deg)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--rotate-x">rotateX (150deg)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--skew">skew (-40deg, 0)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--matrix">matrix (2, 0, 1, 2, 150, 0)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--origin">origin: 350px 92px; rotate (60deg)</div></li>
+                    </ul>
+                </div>
+                <div id="3d">3D трансформації
+                    <h2 class="transform__title">transform: translate3d, scale3d, rotate3d, matrix3d, style, backface</h2>
+                    <ul class="transform transform--bc-perspective">
+                        <li class="transform__item"><div class="transform__box transform__box--3d-translate">translate3d (20px, 80px, 20px)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--3d-scale">scale3d (1,1,2)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--3d-rotate">rotate3d (1, 1, 2, 100deg)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--3d-matrix">matrix3d  (2, 0, 0, 0, 
+                            0, 2, 0, 0, 
+                            0, 0, 2, 0, 
+                            50, 50, 50, 1)</div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--style">rotateY (180deg); transition: all 0.3s ease 0s </div></li>
+                        <li class="transform__item"><div class="transform__box transform__box--backface-visibility">backface-visibility: hidden</div></li>
+                    </ul>
+                </div>
+                <div class="car">
+                    <h2 class="car__title" id="car">Машина</h2>
+                    <h3 class="car__subtitle">Представляємо креслення та прототип авто</h3>
+                    <p>в даній роботі використовується креслення від miray.ua</p>
+                    <img src="img/car.webp" alt="креслення легкового авто" class="car__drawing">
+                </div>
+                <div class="car__wheel wheel">
+                    <div class="wheel__fr">
+                        <div class="wheel__fr wheel__fr--size"></div>
+                    </div>
+                    <div class="wheel__fr wheel__fr--position">
+                        <div class="wheel__fr--position wheel__fr--position--bot"></div>
+                    </div>
+                </div>
+                <div class="car__muffler muffler">
+                    <div class="mufler__tube"></div>
+                    <div class="mufler__tube mufler__tube--size1"></div>
+                    <div class="mufler__tube mufler__tube--size2"></div>
+                    <div class="mufler__tube mufler__tube--size3"></div>
+                    <div class="mufler__tube mufler__tube--size4"></div>
+                    <div class="mufler__tube mufler__tube--size5"></div>
+                    <div class="mufler__tube mufler__tube--size6"></div>
+                    <div class="mufler__tube mufler__tube--size7"></div>
+                    <div class="mufler__tube mufler__tube--size8"></div>
+                    <div class="mufler__tube mufler__tube--size9"></div>
+                    <div class="mufler__tube mufler__tube--size10"></div>
+                    <div class="mufler__tube mufler__tube--size11"></div>
+                    <div class="mufler__tube mufler__tube--size12"></div>
+                </div>
+            
+                
+            </main>
+            <footer  class="footer" id="footer">
+                <div>
+                    <a href="index.html"><p>Весна 2024 - домашнє завдання Урок  11 </p></a>
+                </div>            
+            </footer>
+        </div>
+    </body>
+</html>
+S
