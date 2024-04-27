@@ -12,12 +12,13 @@
             <header class="header">
                 <a href="#2d">2D трансформації</a>
                 <a href="#3d">3D трансформації</a>
-                <a href="#car">Авто мрії</a>
-            
+                <a href="#side">Обкладинка книги (2 сторони)</a>
+                <a href="#car">Машина</a>            
             </header>
             <main class="main">
-                <div id="d2">
-                    <h2 class="transform__title">transform: <span>translate</span>, <span>scala</span>, rotate, skew, matrix, origin</h2>
+                <h1>Домашня робота до уроку</h1>
+                <div id="2d">
+                    <h2 class="title">2D трансформації <br> transform: translate, scala, rotate, skew, matrix, origin</h2>
                     <ul class="transform">
                         <li class="transform__item"><div class="transform__box">translateX (-75px)</div></li>
                         <li class="transform__item"><div class="transform__box transform__box--trans-y">translateY (35px)</div></li>
@@ -32,8 +33,8 @@
                         <li class="transform__item"><div class="transform__box transform__box--origin">origin: 350px 92px; rotate (60deg)</div></li>
                     </ul>
                 </div>
-                <div id="3d">3D трансформації
-                    <h2 class="transform__title">transform: translate3d, scale3d, rotate3d, matrix3d, style, backface</h2>
+                <div id="3d">
+                    <h2 class="title">3D трансформації <br>transform: translate3d, scale3d, rotate3d, matrix3d, style, backface</h2>
                     <ul class="transform transform--bc-perspective">
                         <li class="transform__item"><div class="transform__box transform__box--3d-translate">translate3d (20px, 80px, 20px)</div></li>
                         <li class="transform__item"><div class="transform__box transform__box--3d-scale">scale3d (1,1,2)</div></li>
@@ -46,44 +47,151 @@
                         <li class="transform__item"><div class="transform__box transform__box--backface-visibility">backface-visibility: hidden</div></li>
                     </ul>
                 </div>
-                <div class="car">
-                    <h2 class="car__title" id="car">Машина</h2>
-                    <h3 class="car__subtitle">Представляємо креслення та прототип авто</h3>
-                    <p>в даній роботі використовується креслення від miray.ua</p>
-                    <img src="img/car.webp" alt="креслення легкового авто" class="car__drawing">
-                </div>
-                <div class="car__wheel wheel">
-                    <div class="wheel__fr">
-                        <div class="wheel__fr wheel__fr--size"></div>
+                <ul class="book" id="side">
+                    <li class="book__body">
+                        <div class="book__front">
+                            <img src="img/book_front.webp" alt="Обкладинка книжки, лицьова сторона">
+                        </div>
+                        <div class="book__back">
+                            <img src="img/book_back.webp" alt="Зворотня сторона обкладинки книги">
+                        </div>
+                    </li>
+                    <li class="book__body">
+                        <div class="book__front">
+                            <img src="img/book_front_2.webp" alt="Обкладинка книжки, лицьова сторона">
+                        </div>
+                        <div class="book__back">
+                            <img src="img/book_back_2.webp" alt="Зворотня сторона обкладинки книги">
+                        </div>
+                    </li>
+                    <li class="book__body">
+                        <div class="book__front">
+                        <img src="img/book_front_3.webp" alt="Обкладинка книжки, лицьова сторона">
+                        </div>
+                        <div class="book__back">
+                            <img src="img/book_back_3.webp" alt="Зворотня сторона обкладинки книги">
+                        </div>
+                    </li>
+                </ul>
+                <div class="car" id="car">
+                    <h2 class="car__title" >Машина</h2>
+                    <h3 class="car__subtitle">(креслення від miray.ua)</h3>                    
+                    <img src="img/car.webp" alt="креслення легкового авто" class="car__drawing">                
+                    <div class="car__wheel wheel">
+                        <div class="wheel__fr">
+                            <div class="wheel__fr-center"></div>
+                        </div>
+                        <div class="wheel__bc">
+                            <div class="wheel__bc-center"></div>
+                        </div>
+                    </div>                    
+                    <div class="car__muffler muffler">
+                        <div class="muffler__tube"></div>
+                        <div class="muffler__tube muffler__tube--size1"></div>
+                        <div class="muffler__tube muffler__tube--size2"></div>
+                        <div class="muffler__tube muffler__tube--size3"></div>
+                        <div class="muffler__tube muffler__tube--size4"></div>
+                        <div class="muffler__tube muffler__tube--size5"></div>
+                        <div class="muffler__tube muffler__tube--size6"></div>
+                        <div class="muffler__tube muffler__tube--size7"></div>
+                        <div class="muffler__tube muffler__tube--size8"></div>
+                        <div class="muffler__tube muffler__tube--size9"></div>
+                        <div class="muffler__tube muffler__tube--size10"></div>
+                        <div class="muffler__tube muffler__tube--size11"></div>
+                        <div class="muffler__tube muffler__tube--size12"></div>
                     </div>
-                    <div class="wheel__fr wheel__fr--position">
-                        <div class="wheel__fr--position wheel__fr--position--bot"></div>
+                    <div class="car__mirror mirror">
+                        <div class="mirror__fasad"></div>
+                        <div class="mirror__cromka-fasad"></div>
+                        <div class="mirror__turn-signal"></div>
+                        <div class="mirror__rack"></div>
+                    </div>
+                    <div class="car__door doors">
+                        <div class="door-f">
+                            <div class="door-f__front"></div>
+                            <div class="door-f__front door-f__front--glass"></div>
+                            <div class="door-f__front door-f__front--bottom"></div>
+                            <div class="door-f__knob"></div>
+                            <div class="door-f__knob door-f__knob--fon"></div>
+                        </div>
+                        <div class="door-b">
+                            <div class="door-b__back"></div>
+                            <div class="door-b__parth2"></div>
+                            <div class="door-b__glass2"></div>
+                            <div class="door-b__bot-back"></div>
+                            <div class="door-b__bot-back door-b__bot-back--part2"></div>
+                            <div class="door-b__piece"></div>
+                            <div class="door-b__knob"></div>
+                            <div class="door-b__knob door-b__knob--fon"></div>
+                        </div>                   
+                    </div>
+                    <div class="car__insert insert">
+                        <div class="insert__roof"></div>
+                        <div class="insert__glass-roof"></div>
+                        <div class="insert__glass-roof insert__glass-roof--2"></div>
+                        <div class="insert__glass-roof insert__glass-roof--3"></div>
+                        <div class="insert__luke"></div>
+                        <div class="insert__rear-window"></div>
+                        <div class="insert__rear-window insert__rear-window--windshield"></div>
+                        <div class="insert__rear-pillar"></div>
+                    </div>
+                    <div class="car__trunk trunk">
+                        <div class="trunk__lid"></div>
+                        <div class="trunk__rear-wing"></div>
+                        <div class="trunk__rear-wing trunk__rear-wing--p2"></div>
+                        <div class="trunk__rear-wing trunk__rear-wing--p3"></div>
+                        <div class="trunk__rear-wing trunk__rear-wing--p4"></div>
+                        <div class="trunk__spoiler"></div>
+                        <div class="trunk__bumper-rear"></div>
+                        <div class="trunk__bumper-rear trunk__bumper-rear--p2"></div>
+                        <div class="trunk__bumper-rear trunk__bumper-rear--p3"></div>
+                        <div class="trunk__tail-light"></div>
+                        <div class="trunk__tail-light trunk__tail-light--p2"></div>
+                        <div class="trunk__tail-light trunk__tail-light--p2"></div>
+                        <div class="trunk__reverse-light"></div> 
+                        <div class="trunk__reverse-light trunk__reverse-light--size"></div>
+                        <div class="trunk__arch-rear"></div>
+                        <div class="trunk__body-kit"></div>
+                        <div class="trunk__body-kit trunk__body-kit--part2"></div>
+                        <div class="trunk__body-kit trunk__body-kit--part3"></div>
+                        <div class="trunk__muffler-output"></div>
+                        <div class="trunk__gas-tank"></div>
+                        <div class="trunk__gas-tank trunk__gas-tank--border"></div>
+                    </div>
+                    <div class="car__hood hood">
+                        <div class="hood__top"></div>
+                        <div class="hood__top hood__top--part2"></div>
+                        <div class="hood__top hood__top--part3"></div>
+                        <div class="hood__top hood__top--part4"></div>
+                        <div class="hood__top hood__top--part5"></div>
+                        <div class="hood__stub"></div>
+                        <div class="hood__stub hood__stub--part2"></div>
+                        <div class="hood__stub hood__stub--part3"></div>
+                        <div class="hood__bottom-stub"></div>
+                        <div class="hood__headlight"></div>
+                        <div class="hood__headlight hood__headlight--part2"></div>
+                        <div class="hood__lamp"></div>
+                        <div class="hood__lamp hood__lamp--border"></div>
+                        <div class="hood__lamp hood__lamp--size"></div>
+                        <div class="hood__lamp hood__lamp--miniborder"></div>
+                        <div class="hood__center"></div>
+                        <div class="hood__center hood__center--size"></div>
+                        <div class="hood__air-intake"></div>
+                        <div class="hood__air-intake hood__air-intake--part2"></div>
+                        <div class="hood__item-air"></div>
+                        <div class="hood__item-air hood__item-air--size1"></div>
+                        <div class="hood__item-air hood__item-air--size2"></div>
+                        <div class="hood__item-air hood__item-air--size3"></div>
+                        <div class="hood__nostril"></div>
+                        <div class="hood__front-arch"></div>
                     </div>
                 </div>
-                <div class="car__muffler muffler">
-                    <div class="mufler__tube"></div>
-                    <div class="mufler__tube mufler__tube--size1"></div>
-                    <div class="mufler__tube mufler__tube--size2"></div>
-                    <div class="mufler__tube mufler__tube--size3"></div>
-                    <div class="mufler__tube mufler__tube--size4"></div>
-                    <div class="mufler__tube mufler__tube--size5"></div>
-                    <div class="mufler__tube mufler__tube--size6"></div>
-                    <div class="mufler__tube mufler__tube--size7"></div>
-                    <div class="mufler__tube mufler__tube--size8"></div>
-                    <div class="mufler__tube mufler__tube--size9"></div>
-                    <div class="mufler__tube mufler__tube--size10"></div>
-                    <div class="mufler__tube mufler__tube--size11"></div>
-                    <div class="mufler__tube mufler__tube--size12"></div>
-                </div>
-            
-                
             </main>
             <footer  class="footer" id="footer">
                 <div>
-                    <a href="index.html"><p>Весна 2024 - домашнє завдання Урок  11 </p></a>
+                    <a href="index.html"><p>Весна 2024 - домашня робота Урок  11 </p></a>
                 </div>            
             </footer>
         </div>
     </body>
 </html>
-S
