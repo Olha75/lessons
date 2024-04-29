@@ -1,0 +1,163 @@
+@keyframes left-item {
+	0% {
+		transform:rotate(45deg);
+	}
+	50%,
+	100% {
+        transform:rotate(0deg);
+	}
+}
+
+@keyframes right-item {
+    0% {
+        transform:rotate(-45deg);
+    }
+    50%,
+    100% {
+        transform:rotate(0deg);
+    }
+}
+
+@keyframes center  {
+    0%,
+    50%{           
+        background: radial-gradient(circle at right, rgb(233, 20, 20), black);
+            border-radius: 45%;
+            position: absolute;
+            width: 80px;
+            left:10px;
+            height: 110px;
+        }
+    100%{
+        background: radial-gradient(circle at left, rgb(192, 127, 30), black);
+    }
+}
+
+/* ----------креслення---------- */
+@keyframes car-drawing{
+    0% {
+        left: 1085px;
+    }
+    40% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+
+/* ---------котиться назад--------- */
+@keyframes car-back{
+    0% {
+        left: 0;
+        }
+    100%{
+        left: 300px;
+        }
+}
+
+/* ----колеса назад------ */
+
+
+@keyframes wheel-back{
+    0%,
+    5%
+        { 
+            transform:rotate(-360deg);
+        }
+    100% {
+        transform:rotate(0deg);
+    }
+}
+
+
+/* -----------поворот переднего колеса------- */
+@keyframes turn-wheel{
+    0%  { 
+        transform: skewY(0deg);
+    }
+    10%{ 
+    transform: skewY(-10deg);
+}
+    50% {
+        transform: skewY(-20deg);
+    }
+    100% {
+        transform: skewY(-10deg);
+    }
+    100% {
+        transform: skewY(0deg);
+    }
+} 
+
+/* ---------- фари---------- */
+
+@keyframes reverse-light{
+    0%{
+        background: #ffffff; 
+        box-shadow: -10px 10px 10px white;
+    }
+    99%{
+        
+        box-shadow: -10px 10px 10px white;
+        background: #ffffff; 
+    }
+    100%{
+        background: #ffffff82; 
+        box-shadow: none; 
+    } 
+}
+
+@keyframes stop-light{
+    0%{
+        box-shadow: inset 20px 20px 25px red;
+    }
+    99%{
+        
+        box-shadow: inset 20px 20px 25px red;
+    }
+    100%{
+        
+        box-shadow: inset 2px 2px 5px red; 
+    } 
+}
+
+@keyframes headlight-turn{
+    0% {
+        background-color: rgb(242, 146, 44);
+        }
+    50% {
+        background-color: yellow; 
+        box-shadow: 20px 20px 25px rgba(248, 196, 41, 0.441);
+        }
+    100% {
+        background-color: rgb(242, 146, 44); 
+        box-shadow: none;
+        }
+    }
+
+/* ------ машина уїзжає -----------*/
+
+@keyframes car-go{
+
+    0% {
+        left: 300px;
+    }    
+    100%{
+        left: -1800px;
+        }
+    }
+    
+
+/* ---------колеса вперед-------- */
+
+@keyframes wheel-forward{
+    0%,
+    5%
+        { 
+            transform:rotate(360deg);
+        }
+    100% {
+        transform:rotate(0deg);
+    }
+}
