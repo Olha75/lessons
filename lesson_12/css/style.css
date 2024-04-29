@@ -301,7 +301,7 @@ border:6px solid rgb(245, 126, 35);
 .wheel, .muffler, .mirror, .door-f, .door-b, .insert, .trunk, .hood{
     position: relative;
     animation: car-back 8s  ease forwards,  car-go 8s  ease forwards;
-    animation-delay: 3s, 20s;
+    animation-delay: 3s, 19s;
 }
 
 /* ----------Колеса---------- */
@@ -378,22 +378,14 @@ border:6px solid rgb(245, 126, 35);
 
 
 .wheel__fr{
-    /* animation-iteration-count: 1; */
-    /* animation: car-back 10s  ease forwards;
-    animation-delay: 3s; */
-    animation: wheel-back 8s   ease forwards,  turn-wheel 8s ease forwards, wheel-forward 8s   ease forwards;
+    animation: wheel-back 8s   ease forwards,  turn-wheel 5s ease alternate, wheel-forward 8s   ease alternate;
     animation-delay: 3s, 15s, 19s;
-    /* animation: turn-wheel 8s   ease forwards; */
-    /* animation-delay: 3s; */
- 
-  
 }
 
 
 .wheel__bc{
     animation: wheel-back 8s  ease forwards, wheel-forward 8s   ease forwards;
     animation-delay: 3s, 19s;
- 
 }
 
 /* ---------- Глушник---------- */

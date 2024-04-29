@@ -85,9 +85,6 @@
     100% {
         transform: skewY(-10deg);
     }
-    100% {
-        transform: skewY(0deg);
-    }
 } 
 
 /* ---------- фари---------- */
@@ -152,10 +149,8 @@
 /* ---------колеса вперед-------- */
 
 @keyframes wheel-forward{
-    0%,
-    5%
-        { 
-            transform:rotate(360deg);
+    0% { 
+        rotate:360deg;
         }
     100% {
         transform:rotate(0deg);
