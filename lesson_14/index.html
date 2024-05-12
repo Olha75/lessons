@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Lesson 14</title>
+    </head>
+    <body>
+        <div class="wrapper">            
+            <header class="header">
+                <div class="header__container">
+                    <a href="#maket">Домашнє завдання до уроку №14</a>
+                    <a href="#lesson">Матеріали уроку №14</a>                    
+                </div>
+            </header>
+
+            <main class="page">
+                <form enctype="multipart/form-data"  action="#" class="multi-form" id="maket">
+                    
+                    <div class="multi-form__form form">
+                        <h2 class="form__title">Інформація про покупця</h2>
+                        <input id="form1" name="form[]" type="text" class="form__input" placeholder="Прізвище" autocomplete="on" tabindex="2" maxlength="30" minlength="2"> 
+                        <input id="form1.1" name="form[]" type="tel" class="form__input" placeholder="Контактний телефон" autocomplete="on" required tabindex="3" maxlength="30" minlength="3">
+                        <input id="form1.2" name="form[]" type="text" class="form__input" placeholder="Ім’я" autocomplete="on" tabindex="4" maxlength="30" minlength="2">
+                        <input id="form1.3" name="form[]" type="email" class="form__input" placeholder="E-mail" autocomplete="on" tabindex="5">
+                        <input id="form14" name="form[]" type="text" class="form__input" placeholder="По батькові" autocomplete="on" tabindex="6" maxlength="30" minlength="2">
+
+                        <div class="form__checbox checkbox">
+                            <label for="form1-check" class="checkbox__label">
+                            <input name="шашки" type="checkbox" class="checkbox__input" id="form1-check"   tabindex="7" ><span class="checkbox__text">Отримуватиме замовлення інша людина</span></label>
+                        </div>
+                    </div>
+                    <div class="multi-form__form form">
+                        <h2 class="form__title form__title--delivery">Вибір способу доставки</h2>
+
+                        <div class="form__r">
+                            <label for="key15" class="form__radio radio">                                
+                                <input name="delivery" type="radio" class="radio__input" id="key15"   tabindex="8" checked>  
+                                <img src="img/icon_pickup.png" alt="значок самовивозу купленого товару" class="radio__img"> 
+                                <span class="radio__text">Самовивіз із магазину
+                                    <span class="radio__item">Безкоштовно
+                                    </span>
+                                </span>                        
+                            </label>
+                            
+                            <label for="key16" class="form__radio radio">                                
+                                <input name="delivery" type="radio" class="radio__input" id="key16"   tabindex="9">
+                                <img src="img/icon-np.svg" alt="значок доставки службою Нова пошта" class="radio__img">
+                                    <span class="radio__text">Доставка Нова Пошта
+                                        <span class="radio__item">≈ від 500 грн                           
+                                        </span>
+                                    </span>                              
+                            </label>
+    
+                            <label for="key17" class="form__radio radio">                                
+                                <input name="delivery" type="radio" class="radio__input" id="key17"   tabindex="10">
+                                <img src="img/icon-curer.svg" alt="значок доставки кур'єром" class="radio__img">                                
+                                <span class="radio__text">Доставка кур'єром
+                                    <span class="radio__item">≈ від 200 грн
+                                    </span>
+                                </span>
+                            </label>
+                        </div>     
+
+                        <div class="form__map map">
+                            <p>Графік роботи: щодня з 9:00 до 18:00 <br> <span>м. Київ, пров. Ізяславський 52, пов. 2</span>
+                            </p>
+                            <a href="img/map.jpg" target="_blank"  tabindex="11" class="map__batton" >На мапі</a>
+                        </div>       
+                    </div>            
+                    
+                    <div class="multi-form__form form">
+                        <h2 class="form__title form__title--pay">Вибір способу оплати</h2>
+
+                        <div class="form__pay pay">
+                            <label for="p1">
+                                <input name="pay" type="radio" class="pay__radio-input" id="p1"   tabindex="12">
+                                <span class="pay__text">Готівкою при отриманні (Післясплата)</span>
+                            </label>
+                                
+                            <label for="p2">
+                                <input name="pay" type="radio" class="pay__radio-input" id="p2"   tabindex="13" >
+                                <span class="pay__text pay__text--site">Оплата карткою на сайті</span>
+                            </label>
+                                
+                            <label for="p3">
+                                <input name="pay" type="radio" class="pay__radio-input" id="p3"   tabindex="14">
+                                <span class="pay__text pay__text--pp">Privat Pay</span>
+                            </label>
+    
+                            <label for="p4">
+                                <input name="pay" type="radio" class="pay__radio-input" id="p4"   tabindex="15" checked>
+                                <span class="pay__text">Кредит від Krovato</span>
+                            </label>
+                                
+                            <label for="p5">
+                                <input name="pay" type="radio" class="pay__radio-input" id="p5"   tabindex="16">
+                                <span class="pay__text pay__text--part">Оплата частинами ПриватБанк</span>
+                            </label>
+                                
+                            <label for="p6">
+                                <input name="pay" type="radio" class="pay__radio-input" id="p6"   tabindex="16">
+                                <span class="pay__text pay__text--mb">Оплата частинами МоноБанк</span>
+                            </label>
+                        </div>
+                    </div>      
+                                
+                    <div class="multi-form__form form">
+                        <h2 class="form__title form__title--comment">Коментар до замовлення</h2>
+                        <textarea  class="form__textarea" id="30"    placeholder="Ваш коментар" tabindex="17"></textarea>
+                    </div>
+
+                    <div class="multi-form__form form">
+                        <button type="submit" class="form__finish-button" tabindex="18">ОФОРМИТИ ЗАМОВЛЕННЯ
+                        </button>
+                    </div>
+                    
+                </form>
+
+                <div class="lesson" id="lesson">
+                    <div class="lesson__container">
+                        <h1 class="lesson__title">Матеріали уроку №14</h1>
+                        <form enctype="multipart/form-data"  action="#" class="lesson__form f">
+                            <div class="f__inputs">
+                                <div class="f__line">
+                                    <input name="form[]" type="text" class="f__input" value="майбутній текст" placeholder="щось треба написати" autocomplete="on" tabindex="19" maxlength="10" minlength="5">
+                                </div>
+                                <div class="f__line">
+                                    <label for="i1">Те що треба написати</label>
+                                    <input id="i1" name="form[]" type="text" class="f__input" placeholder="пиши, що написано" autocomplete="on"  tabindex="20" maxlength="10" minlength="5">
+        
+                                </div>
+                                <div class="f__line">
+                                    <input name="form[]" type="email" class="f__input"  placeholder="введіть свого равлика @ собачку" autocomplete="on"  tabindex="21" maxlength="10" minlength="5">
+                                </div>
+                                <div class="f__line">
+                                    <input name="os" type="hidden" class="f__hidden" value="linux" >
+                                </div>
+                                <div class="f__line">
+                                    <input name="form[]" type="tel" class="f__input"  placeholder="введіть свій номер телефону" autocomplete="on"  tabindex="22" maxlength="10" minlength="5">
+                                </div>
+                                <div class="f__line">
+                                    <input name="form[]" type="password" class="f__input"  placeholder="введіть пін-код від своєї master card" autocomplete="on" required tabindex="23" maxlength="4" minlength="4">
+                                </div>
+                                <div class="f__line">
+                                    <label for="i2">Введіть ваш вік</label>
+                                    <input name="form[]" type="number" class="f__input"  placeholder="та введіть вже, не соромтесь" id="i2" autocomplete="on" tabindex="24">
+                                </div>
+                                <div class="f__line">
+                                    <label for="i3">колір вашого настрою, сьогодні</label>
+                                    <input name="form[]" type="color" class="f__input"   autocomplete="on"  tabindex="25" id="i3">
+                                </div>
+                                <div class="f__line">
+                                    <label for="i4">щось шукаєте, тоді сюди</label>
+                                    <input name="form[]" type="search" class="f__input"  placeholder="пошук" autocomplete="on"  tabindex="26"  minlength="3" id="i4">
+                                </div>
+                                <div class="f__line">
+                                    <label for="i5">все проспав, згадай, яке сьогодні число</label>
+                                    <input name="form[]" type="date" class="f__input"  tabindex="27" id="i5">
+                                </div>
+                            </div>
+
+                            <div class="f__line f__line--bottom">
+                                <label for="i6">який рівень терпіння у ментора?</label>
+                                <input name="form[]" type="range" class="f__input" id="i6" value="0" tabindex="28">
+                            </div>
+
+                            <div class="f__ch-groop groop">
+                                <h2 class="groop__title">Яка ваша улюблена гра?</h2>
+                                <div class="groop__checkbox">
+                                    <label for="i7" class="groop__lable">
+                                    <input name="play" type="checkbox" class="groop__input-checkbox"  id="i7"  tabindex="29"  checked>
+                                    <span class="groop__span">Кьорлінг</span>
+                                    </label>
+                                    <label for="i8" class="groop__lable">
+                                    <input name="play-to" type="checkbox" class="groop__input-checkbox"  id="i8"  tabindex="30">
+                                    <span class="groop__span">Хобіхорсинг</span>                       
+                                    </label>
+                                </div>                            
+                            </div>
+
+                            <div class="f__line f__line--menu menu">
+                                <fieldset class="menu__group">
+                                    <legend class="menu__title">Оберіть меню на сніданок</legend>
+                                    <div class="menu__items">
+                                        <label for="m1" class="menu__label">
+                                            <input name="breakfast" type="radio" class="menu__radio-input" id="m1"   tabindex="31">
+                                            <span class="menu__span">Гречнева каша з молоком і сіллю</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="menu__items">
+                                        <label for="m2" class="menu__label">
+                                            <input name="breakfast" type="radio" class="menu__radio-input" id="m2" disabled  tabindex="32">
+                                            <span class="menu__span">Бутерброди з червоною рибою, кава
+                                            </span>
+                                        </label>
+                                        </div>
+
+                                    <div class="menu__items">
+                                        <label for="m3" class="menu__label">
+                                            <input name="breakfast" type="radio" class="menu__radio-input" id="m3"   tabindex="33">
+                                            <span class="menu__span">Гречнева каша з молоком і сіллю</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="menu__items">
+                                        <label for="m4" class="menu__label">
+                                            <input name="breakfast" type="radio" class="menu__radio-input" id="m4"   tabindex="34" checked>
+                                            <span class="menu__span">Гречнева каша з молоком і сіллю</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="menu__items">
+                                        <label for="m5" class="menu__label">
+                                            <input name="breakfast" type="radio" class="menu__radio-input" id="m5"   tabindex="35">
+                                            <span class="menu__span">Гречнева каша з молоком і сіллю</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="f__line f__line--file">                              
+                                <input multiple accept=".doc, .psd, .pdf" name="file" type="file" class="f__file"    tabindex="36" >
+                            </div>
+
+                            <div class="f__line">
+                                <textarea  class="f__textarea" id="key4"   tabindex="37" placeholder="хочте пишіть, хочте не пишіть"></textarea>
+                            </div>
+
+                            <div class="f__line f__line--select">
+                                <label for="select">Оберіть якості, що панують саме вам</label>
+                                <select multiple name="select" class="f__select" id="select">
+                                    <option value="01" tabindex="38">Щедрість</option>
+                                    <option value="02" tabindex="39">Відзивчивість</option>
+                                    <option value="03" tabindex="40">Добропорядність</option>
+                                    <option selected value="05" tabindex="41">Пунктуальність</option>
+                                    <option value="04" tabindex="42">Почуття гумору</option>
+                                </select>                            
+                            </div>
+
+                            <div class="f__line f__line--button">
+                                <button type="button" tabindex="43" class="f__button f__button--red">та я тут у куточку постою, я просто кнопка</button>
+                                <button type="reset" tabindex="44" class="f__button f__button--yellow">впевнений що хочеш натиснути? бо я кнопка яка чистить форму</button>
+                                <button type="submit" tabindex="45" class="f__button f__button--green">Подумай 3 рази!!! бо я зараз оту всю писанину кудись відправлю</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+            </main>
+            <footer  class="footer" id="footer">
+                <div>
+                    <a href="index.html" tabindex="46"><p>Весна 2024 - домашня робота Урок  14 </p></a>
+                </div>            
+            </footer>
+        </div>
+    </body>
+</html>
